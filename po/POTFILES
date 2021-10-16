@@ -1,0 +1,7 @@
+data/github.com.jczartek.Vocabulary.desktop.in
+data/github.com.jczartek.Vocabulary.appdata.xml.in
+data/github.com.jczartek.Vocabulary.gschema.xml
+src/vocabulary-window.ui
+src/main.c
+src/vocabulary-window.c
+
