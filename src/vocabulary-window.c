@@ -21,14 +21,10 @@
 
 struct _VocabularyWindow
 {
-  GtkApplicationWindow  parent_instance;
-
-  /* Template widgets */
-  GtkHeaderBar        *header_bar;
-  GtkLabel            *label;
+  AdwApplicationWindow  parent_instance;
 };
 
-G_DEFINE_TYPE (VocabularyWindow, vocabulary_window, GTK_TYPE_APPLICATION_WINDOW)
+G_DEFINE_TYPE (VocabularyWindow, vocabulary_window, ADW_TYPE_APPLICATION_WINDOW)
 
 static void
 vocabulary_window_class_init (VocabularyWindowClass *klass)
@@ -36,8 +32,6 @@ vocabulary_window_class_init (VocabularyWindowClass *klass)
   GtkWidgetClass *widget_class = GTK_WIDGET_CLASS (klass);
 
   gtk_widget_class_set_template_from_resource (widget_class, "/github/com/jczartek/Vocabulary/vocabulary-window.ui");
-  gtk_widget_class_bind_template_child (widget_class, VocabularyWindow, header_bar);
-  gtk_widget_class_bind_template_child (widget_class, VocabularyWindow, label);
 }
 
 static void

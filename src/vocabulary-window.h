@@ -19,11 +19,12 @@
 #pragma once
 
 #include <gtk/gtk.h>
+#include <adwaita.h>
 
 G_BEGIN_DECLS
 
 #define VOCABULARY_TYPE_WINDOW (vocabulary_window_get_type())
 
-G_DECLARE_FINAL_TYPE (VocabularyWindow, vocabulary_window, VOCABULARY, WINDOW, GtkApplicationWindow)
+G_DECLARE_FINAL_TYPE (VocabularyWindow, vocabulary_window, VOCABULARY, WINDOW, AdwApplicationWindow)
 
 G_END_DECLS

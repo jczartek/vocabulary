@@ -6,6 +6,7 @@ vocabulary_sources = [
 
 vocabulary_deps = [
   dependency('gtk4'),
+  dependency('libadwaita-1')
 ]
 
 gnome = import('gnome')
